@@ -1,0 +1,284 @@
+body{
+    background-color:#ffff;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:300;
+}
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.637)), url(Images/header-img.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+
+}
+
+.header-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+h1{
+font-size:500%;
+color: #ffff;
+font-weight: 400;
+margin-bottom: 10px;
+}
+
+h2{
+    font-size:150%;
+    color: #ffff;
+    font-weight: 300;
+    }
+
+.header-box-text{
+    margin-bottom: 100px;
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration:none;
+    padding: 10px 30px;
+    border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #4df3ff;
+    color: darkblue;
+
+}
+
+.btn:hover,
+.btn:active{
+background-color:	#00d6e6;
+}
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+text-decoration: none;
+color: white;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #00d6e6;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    float: left;
+}
+
+
+
+/* Card Designing */
+
+.cards-back{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left:200px;
+    padding-bottom: 20px;
+    
+}
+
+.cards-back .card-header{
+ padding-bottom:02px;
+ padding-top:10px;
+ color: black;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ 
+}
+ .card-back hr{
+    color: darkturquoise;
+ }
+
+.cards{
+    display: inline-block;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 250px;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px black;
+}
+
+.cards-image{
+    width: 180px;
+    height: 100px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+
+}
+
+.cards-info{
+    font-size: 10px;
+    margin-bottom: 2em;
+    padding-top: 10px;
+}
+.cards-para{
+    padding-top: 10px;
+}
+.cards-info > h2 {
+    font-size: 2 px;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.cards-info > p{
+    font-size: 2 px;
+    color: black;
+    text-align: justify;
+    line-height: 150 px;
+    margin-top: 0.2em;
+}
+
+.card-button{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 50px;
+    border: none;
+    color: red;
+    padding: 4px 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+
+    border: 2px solid pink;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card-button:hover{
+    background-color: pink;
+    color: white;
+}
+
+/*About Us*/
+.about-section{
+    padding-top: 20px;
+}
+.laptop-image{
+     width: 80%;
+     border-radius: 20px;
+     border-image: space;
+     
+}
+.about-heading{
+    padding-left: 50px;
+    color: #000;
+    letter-spacing: 2;
+    font-size: 250%;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+}
+.about-para{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: medium;
+}
+
+.btn-ghost{
+ margin-left: 50px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 2px solid;
+    color: black;
+}
+
+.btn-ghost:hover{
+color: white;
+}
+
+/*Work Section and Below*/
+.work-row{
+    padding-left: 150px;
+}
+.about-work{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.section-heading{
+    color: black;
+}
+.section-hr{
+    color: #00d6e6;
+}
+
+.work-portfolio{
+
+    list-style: none;
+    width: 100%;
+}
+
+.work-portfolio li{
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.portfolio-image{
+    background-color: black;
+    overflow: hidden;
+}
+.portfolio-image img{
+    height: auto;
+    width: 95%;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.portfolio-para{
+    color: white;
+}
+
+.portfolio-image img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+/*Footer Row*/
+footer{
+    margin-top: 380px;
+}
+.footer-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:black ;
+    text-align: center;
+    color: azure;
+}
